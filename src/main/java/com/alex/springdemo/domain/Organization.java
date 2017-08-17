@@ -17,10 +17,13 @@ public class Organization {
 	
 	private BusinessService businessService; 
 	
-
 	public Organization(String companyName, int yearOfIncorporation) {
 		this.companyName = companyName;
 		this.yearOfIncorporation = yearOfIncorporation;
+	}
+
+	public String getCompanyName() {
+		return companyName;
 	}
 
 	public int getEmployeeCount() {

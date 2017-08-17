@@ -6,12 +6,12 @@
 
 
 	<bean id="myorg" class="com.alex.springdemo.domain.Organization">
-		<constructor-arg value="Amazon" name="companyName"></constructor-arg>
-		<constructor-arg value="1994" name="yearOfIncorporation"></constructor-arg>
-		<property name="postalCode" value="75757"></property>
-		<property name="employeeCount" value="70000"></property>
+		<constructor-arg value="Google" name="companyName"></constructor-arg>
+		<constructor-arg value="1996" name="yearOfIncorporation"></constructor-arg>
+		<property name="postalCode" value="65656"></property>
+		<property name="employeeCount" value="1337"></property>
 		<property name="slogan"
-			value="Work hard, have fun, make history">
+			value="To organize the worlds information and make it universally accessible and useful">
 		</property>
 		<property name="businessService" ref="ecommerceService"></property>
 	</bean>
@@ -21,5 +21,18 @@
 	
 	<bean id="ecommerceService"
 		class="com.alex.springdemo.serviceimpl.EcommerceServiceImpl">
+	</bean>
+	<bean
+		class="com.alex.springdemo.serviceimpl.AgencyRecruitmentServiceImpl"
+		id="agency">
+	</bean>
+	<bean id="referral"
+		class="com.alex.springdemo.serviceimpl.ReferralRecruitmentServiceImpl">
+	</bean>
+	<bean id="myhrdept"
+		class="com.alex.springdemo.domain.HumanResourceDept">
+	<constructor-arg name="recruitmentService" ref="referral"></constructor-arg>
+	<constructor-arg name="organization" ref="myorg"></constructor-arg>
+	<property name="deptName" value="Human Resource Department"></property>
 	</bean>
 </beans>
