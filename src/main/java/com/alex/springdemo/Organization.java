@@ -1,11 +1,11 @@
 package com.alex.springdemo;
 
 public class Organization {
-	private String companyName; 
-	private int yearOfIncorporation; 
-	private String postalCode; 
-	private int employeeCount; 
-	
+	private String companyName;
+	private int yearOfIncorporation;
+	private String postalCode;
+	private int employeeCount;
+
 	public Organization(String companyName, int yearOfIncorporation) {
 		this.companyName = companyName;
 		this.yearOfIncorporation = yearOfIncorporation;
@@ -34,5 +34,3 @@ public class Organization {
 				+ ", postalCode=" + postalCode + ", employeeCount=" + employeeCount + "]";
 	}
 }
-
-

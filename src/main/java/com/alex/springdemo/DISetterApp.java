@@ -3,7 +3,7 @@ package com.alex.springdemo;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class SetterApp {
+public class DISetterApp {
 
 	public static void main(String[] args) {
 		// create application context (container) 
