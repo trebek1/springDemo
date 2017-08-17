@@ -5,10 +5,21 @@
 
 
 
-	<bean id="myorg" class="com.alex.springdemo.Organization">
-		<constructor-arg value="BMW" name="companyName"></constructor-arg>
-		<constructor-arg value="1929" name="yearOfIncorporation"></constructor-arg>
-		<property name="postalCode" value="56565"></property>
-		<property name="employeeCount" value="10000"></property>
+	<bean id="myorg" class="com.alex.springdemo.domain.Organization">
+		<constructor-arg value="Amazon" name="companyName"></constructor-arg>
+		<constructor-arg value="1994" name="yearOfIncorporation"></constructor-arg>
+		<property name="postalCode" value="75757"></property>
+		<property name="employeeCount" value="70000"></property>
+		<property name="slogan"
+			value="Work hard, have fun, make history">
+		</property>
+		<property name="businessService" ref="ecommerceService"></property>
+	</bean>
+	<bean id="cloudService"
+		class="com.alex.springdemo.serviceimpl.CloudServiceImpl">
+	</bean>
+	
+	<bean id="ecommerceService"
+		class="com.alex.springdemo.serviceimpl.EcommerceServiceImpl">
 	</bean>
 </beans>
