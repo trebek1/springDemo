@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.alex</groupId>
-  <artifactId>spring-ioc-demo-1</artifactId>
+  <artifactId>spring-setter-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>spring-ioc-demo-1</name>
+  <name>spring-setter-demo</name>
   <url>http://maven.apache.org</url>
 
   <properties>
