@@ -1,5 +1,6 @@
 package com.alex.springdemo.domain;
 
+import com.alex.springdemo.service.Department;
 import com.alex.springdemo.service.RecruitmentService;
 
 public class HumanResourceDept implements Department {

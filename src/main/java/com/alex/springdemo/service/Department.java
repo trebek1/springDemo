@@ -1,4 +1,4 @@
-package com.alex.springdemo.domain;
+package com.alex.springdemo.service;
 
 public interface Department {
 	public String hiringStatus(int numberOfRecruitments);  
